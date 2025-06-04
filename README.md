@@ -2,13 +2,13 @@
 
 ## Opis projektu
 
-Projekt ma przedstawienie o pisania sktrukturę HTML,CSS i JAVASCRIPTa z linkami , mało pisania w jednej pliku kodu.
+Projekt ma celu przedstawienie o  sktrukturę HTML,CSS i JAVASCRIPT z linkami , mało pisania w jednej pliku kodu.
  
 ---
 
 ## Zawartość
 
-* 'index.html': Szablon HTML strony.
+* `index.html`: Szablon HTML strony.
 * `app.js`: Skrypt JavaScript wyświetlający emotikonę w konsoli.
 * `style.css`: Arkusz stylów zmieniający tło strony.
 
