@@ -4,7 +4,11 @@ body {
 	
 }
 
-
-
-
-
+.container {
+    background-color: orangered;
+    max-width: 800px;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+}
