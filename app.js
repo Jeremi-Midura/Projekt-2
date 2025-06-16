@@ -1,19 +1,11 @@
 console.log(':)');
 
 document.addEventListener("keydown", (event) => {
-    const focusableElements = document.querySelectorAll('a, button, input, [tabindex]:not([tabindex="-1"])');
-    const focusableArray = Array.from(focusableElements);
-    const currentIndex = focusableArray.indexOf(document.activeElement);
-
-    if (focusableArray.length > 0 && document.activeElement && focusableArray.includes(document.activeElement)) {
-        if (event.key === "ArrowDown" || event.key === "ArrowRight") {
-            const nextIndex = (currentIndex + 1) % focusableArray.length;
-            focusableArray[nextIndex].focus();
-            event.preventDefault();
-        } else if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
-            const prevIndex = (currentIndex - 1 + focusableArray.length) % focusableArray.length;
-            focusableArray[prevIndex].focus();
-            event.preventDefault();
-        }
+    if (event.key === "ArrowDown") {
+        window.scrollBy({ top: 50, behavior: "smooth" });
+        event.preventDefault();
+    } else if (event.key === "ArrowUp") {
+        window.scrollBy({ top: -50, behavior: "smooth" });
+        event.preventDefault();
     }
 });
